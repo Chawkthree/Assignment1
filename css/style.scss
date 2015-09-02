@@ -1,11 +1,26 @@
+// SASS VARIABLES
+
+$basefont: "Arial",sans-serif;
+$bg: #3d5673;
+// Margin r-l
+$auto: auto;
+// Main text color
+$textc: white;
+//Contact & video section colors
+$con_v: #855b63;
+// Top margin for some divs
+$tm: 40px;
+$m_padding: 5%;
+
+
 html,body{
   height:100%;
 }
 
 body{
-  background:#3d5673;
-  color: white;
-  font-family:"Arial", sans-serif;
+  background:$bg;
+  color: $textc;
+  font-family: $basefont;
   margin: 0;
   padding: 0;
 }
@@ -37,7 +52,7 @@ font-size: 2em;
 
 #name{
 text-align:center;
-color: white;
+color: $textc;
 font-size: 10em;
 margin: 0;
 padding: 0;
@@ -47,7 +62,7 @@ line-height: 100%;
 
 #special{
 text-align:center;
-color: white;
+color: $textc;
 font-size: 5em;
 margin-top: -20px;
 
@@ -75,7 +90,7 @@ padding-top: 5%;
 #abt{
 width: 50%;
 height: 50%;
-background-color: #3d5673;
+background-color: $bg;
 float: right;
 
 
@@ -103,7 +118,7 @@ padding-bottom: 30px;
 
 .head {
 text-align: center;
-color: white;
+color: $textc;
 font-size: 2.5em;
 margin: 0;
 padding-top: 20px;
@@ -179,7 +194,7 @@ text-align: center;
 #portfolio .ptitle{
 display: inline-block;
 margin: 40px;
-border: 15px solid #3d5673;
+border: 15px solid $bg;
 }
 
 .ptitle{
@@ -223,7 +238,7 @@ margin-bottom: -4px;
 }
 
 .read a:link, a:visited{
-color: white;
+color: $textc;
 font-size: .8em;
 }
 
@@ -232,38 +247,38 @@ color: #d6d6d6;
 }
 
 #wresume{
-background-color: #3d5673;
+background-color: $bg;
 text-align: center;
 }
 
 #wresume img{
 width: 40%;
-margin-top: 40px;
+margin-top: $tm;
 margin-bottom: 20px;
 }
 
 #wresume p{
-color: white;
+color: $textc;
 font-size: 1.5em;
-padding-right: 5%;
-padding-left: 5%;
+padding-right: $m_padding;
+padding-left: $m_padding;
 padding-bottom: 40px;
 margin-bottom: 0;
 }
 
 #vresume{
-background-color: #855b63;
+background-color: $con_v;
 }
 
 #vresume video{
 width: 80%;
 max-width: 700px;
 min-width: 200px;
-height: auto;
+height: $auto;
 display: block;
-margin-right: auto;
-margin-left: auto;
-margin-top: 40px;
+margin-right: $auto;
+margin-left: $auto;
+margin-top: $tm;
 border: solid #663d45 20px;
 }
 
@@ -274,7 +289,7 @@ padding-bottom: 40px;
 #contact{
 text-align: center;
 transition: all 0.5s ease;
-background-color: #855b63;
+background-color: $con_v;
 }
 
 #contact .social{
@@ -306,10 +321,10 @@ opacity: 0.5;
 
 
 #contact p{
-color: white;
+color: $textc;
 font-size: 1.5em;
-padding-right: 5%;
-padding-left: 5%;
+padding-right: $m_padding;
+padding-left: $m_padding;
 padding-bottom: 40px;
 margin-bottom: 0;
 }
@@ -323,10 +338,10 @@ background-color: #9d9d9e;
 #end canvas{
 font-size: 5em;
 text-align: center;
-padding-top: 5%;
+padding-top: $m_padding;
 text-transform: uppercase;
-margin-right: auto;
-margin-left: auto;
+margin-right: $auto;
+margin-left: $auto;
 display: block;
 }
 
@@ -337,8 +352,8 @@ display: none;
 #top{
 position: relative;
 display: block;
-margin-right: auto;
-margin-left: auto;
+margin-right: $auto;
+margin-left: $auto;
 }
 
 #top:hover{
@@ -407,7 +422,7 @@ display: none;
 float: none;
 width: 100%;
 font-size: 2em;
-height: auto;
+height: $auto;
 
 }
 
@@ -423,8 +438,8 @@ width: 35%;
 display: block;
 margin: 60px;
 text-align: center;
-margin-right: auto;
-margin-left: auto;
+margin-right: $auto;
+margin-left: $auto;
 }
 
 
