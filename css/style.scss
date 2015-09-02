@@ -278,7 +278,8 @@ text-align: center;
 
 
 img{
-width: 40%;
+// Math Use #1
+width: 480px / 1200px * 100%;
 margin-top: $tm;
 margin-bottom: 20px;
 }
@@ -327,7 +328,8 @@ margin: 60px;
 }
 
 .social{
-width: 15%;
+// Math use #2
+width: 180px / 1200px * 100%;
 transition: all 0.5s ease-in-out;
 }
 
