@@ -13,6 +13,15 @@ $tm: 40px;
 $m_padding: 5%;
 
 
+// Sass Mixin
+
+@mixin ptitle{
+  display: inline-block;
+  margin: 40px;
+  border: 15px solid $bg;
+  position: relative;
+}
+
 
 
 
@@ -111,11 +120,16 @@ clear: both;
 text-align: center;
 }
 
-
-.head {
+.htop{
 text-align: center;
 color: $textc;
 font-size: 2.5em;
+
+}
+
+// @extend used in .head
+.head {
+@extend .htop;
 margin: 0;
 padding-top: 20px;
 font-weight: normal;
@@ -196,12 +210,18 @@ cursor: pointer;
 background-color: #567496;
 text-align: center;
 
+// Mixin applied below
 
-.ptitle{
-display: inline-block;
-margin: 40px;
-border: 15px solid $bg;
-position: relative;
+.ptitle1{
+@include ptitle;
+}
+
+.ptitle2{
+@include ptitle;
+}
+
+.ptitle3{
+@include ptitle
 }
 } // .ptitle nested inside of #portfolio
 
